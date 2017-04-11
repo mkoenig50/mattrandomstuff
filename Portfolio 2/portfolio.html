@@ -1,0 +1,45 @@
+<html>
+
+
+<head>
+<script src="portfolio.js"></script>
+</head>
+
+
+<body>
+<h1>
+Hello! This is the Memory Game from CS 319 Group 22
+<h1>
+
+
+<h2>
+The esay model has 4*2 elements, middle has 4*4 elements, hard has 6*6 elements
+<h2>
+
+<form>
+<input type="button" value="Easy" onclick="easyStart();" />
+<input type="button" value="Middle" onclick="middleStart();" />
+<input type="button" value="Hard" onclick="hardStart();" />
+</form>
+
+
+<body>
+<div id="myMatch">
+</div>
+
+
+<script>
+	function easyStart() {
+		document.getElementById("myMatch").innerHTML = Easy.run();
+	}
+	function middleStart() {
+		document.getElementById("myMatch").innerHTML = Middle.run();
+	}
+    function hardStart() {
+		document.getElementById("myMatch").innerHTML = Hard.run();
+	}
+
+</script>
+</body>
+
+</html>
